@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background: lightgrey;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-container{
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2rem;
+}
+
+.article-image{
+    margin: 0;
+    padding: 0;
+    overflow: 0;;
+}
+
+.article-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.article-card{
+    background: white;
+    border-radius: 0px;
+    transition: 0.3s;
+    display: block;
+}
+
+.article-card:hover{
+    box-shadow: 0 4px 20px 0 rgba(34,68,123,0.2);
+    cursor: pointer;
+}
+
+.article-content{
+    padding: 2rem;
+}
+
+.article-content .card-category{
+    font-size: 0.875rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: #6b82a7;
+    display: flex;
+    text-decoration: none;
+    margin: 1rem 0;
+    
+}
+
+.article-content .card-title{
+   color: #22447b;
+}
+
+.article-content .card-excerpt{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 0;
+}
+
+.article-card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  
+.article-card .icon a{
+    font-size: 0.875rem;
+    color: blue;
+  }
+  
+.article-card .icon a i{
+    padding-right: 0rem;
+    color: grey;
+  }
+  
+.article-card .icon a:hover{
+    color: grey;
+}
+
+.card-profile{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.profile-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-name{
+    font-size: 1rem;
+}
+
+.profile-time{
+    color: grey;
+    font-size: 0.9rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .site-container {
+        max-width: 608px;
+    }
+    .article-card {
+        display: grid;
+    }
+}
+@media screen and (min-width: 1280px){
+    .site-container {
+        max-width: 1156px;
+    }
+}
